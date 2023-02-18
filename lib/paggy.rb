@@ -1,3 +1,4 @@
+require "paggy/controller"
 require "paggy/version"
 require "paggy/railtie"
 require "paggy/page"

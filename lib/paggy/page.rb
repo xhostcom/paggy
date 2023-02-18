@@ -18,7 +18,7 @@ module Paggy
 		end
 
 		def last?
-			page_count <= number
+            page_count <= number
 		end
 
 		def next_param
