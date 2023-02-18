@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+$: << File.expand_path("../test", __dir__)
+
+
+puts "Preparing test environment..."
+`cd test/dummy && RAILS_ENV=test bundle exec rails db:drop db:create db:migrate db:seed`
+require "bundler/setup"
+require "rails/plugin/test"
